@@ -40,7 +40,7 @@ The SABON GARI / MUHDA PRI SCH record the highest outlier score (8.320158) indic
 
 BUKKUYUM PRIMARY SCHOOL was among closest polling units to two of the top outliers indicating possible voting irregularities.
 
-From the scatter plot in the Outlier detection in Election Data Using Geospatial Analysis.ipynb, PDP party and NNPP party had the most outliers indicating there must have been possible voting irregularities.
+From the scatter plot in the Outlier detection in Election Data Using Geospatial Analysis.ipynb file, PDP party and NNPP party had the most outliers indicating there must have been possible voting irregularities.
 
 
 
