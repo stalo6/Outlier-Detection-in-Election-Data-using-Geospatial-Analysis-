@@ -11,6 +11,10 @@ In a recently concluded election, the Independent National Election Commission f
 Objective:
 
  The goal is to identify polling units in Zamfara State, Nigeria where voting results deviate significantly from neighbouring units, indicating potential influences or rigging.We aim to detect outliers that may indicate irregularities by analyzing the geospatial data and voting results.
+ 
+Data set:
+
+I used the Zamfara state dataset in the ZAMFARA_crosschecked_1.csv file
 
 Data Overview:
 
