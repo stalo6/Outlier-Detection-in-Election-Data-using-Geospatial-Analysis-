@@ -1,50 +1,94 @@
-Outlier Detection in Zamfara State Presidential Election Data using Geospatial Analysis 
+Outlier Detection in Zamfara State Presidential Election Data Using Geospatial Analysis
 
-Definition:
+Definition
 
-An outlier is a data point significantly different from from other data points in a dataset.The difference can be much higher or lower than the other other values.
+An outlier is a data point significantly different from other values in a dataset. These deviations can be much higher or lower than the norm, often signaling irregularities or errors.
 
-Context: 
+Context
 
-In a recently concluded election, the Independent National Election Commission faced numerous legal challenges regarding the integrity and accuracy of the election results.Allegations of vote manipulation and irregularities have been widespread, prompting a thorough investigation into the matter.
+In a recently concluded election in Zamfara State, Nigeria, the Independent National Electoral Commission faced widespread allegations of vote manipulation and irregularities. These claims raised questions about the integrity of the results, prompting the need for a data-driven investigation into potential anomalies at the polling unit level.
 
-Objective:
+Objective
 
- The goal is to identify polling units in Zamfara State, Nigeria where voting results deviate significantly from neighbouring units, indicating potential influences or rigging.We aim to detect outliers that may indicate irregularities by analyzing the geospatial data and voting results.
- 
-Data set:
+To identify polling units in Zamfara State where voting results deviate significantly from their neighboring units. The analysis aims to detect potential irregularities or influences by leveraging geospatial data and voting patterns.
 
-I used the Zamfara state dataset in the ZAMFARA_crosschecked_1.csv file
+Dataset
 
-Data Overview:
+Source: Zamfara State dataset (ZAMFARA_crosschecked_1.csv).
 
-•Scope -12 Local Government Areas ,70 wards
-•Parties involved -APC, PDP,LP ,NNPP
-•Vote Counts -APC:15190 ,PDP:8218, LP:34, NNPP:156
+Scope: 12 Local Government Areas, 70 Wards.
+Parties Analyzed: APC, PDP, LP, NNPP.
 
-Methodology:
+Vote Counts:
+•APC: 15,190
+•PDP: 8,218
+•LP: 34
+•NNPP: 156
 
-1.Data Collection -Obtained longitudes and latitudes for each polling unit using Google Geocoding API.
+Methodology
 
-2.Calculating Outlier Score- I calculated outlier score by first calculating the mean and standard deviation of votes for each polling unit from its neighbors then proceed to determining the outlier score.
+1️⃣ Data Collection
 
-3.Identifying outliers - I identified outliers by defining a threshold which I set to 1 to determine which polling units were outliers based on outlier scores.
+Retrieved the longitude and latitude of each polling unit using the Google Geocoding API.
 
-Insights : 
+2️⃣ Calculating Outlier Scores
 
-The top outlier was SABON GARI / MUHDA PR SCH with an outlier score of 8.320158 with its closest polling units being BAGEGA II/ MAKARANTA , KATAFANA , DAN FAGE  and ST UNGAR MAGAJI / PRIMARY SCHOOL AREA.
+Calculated the mean and standard deviation of votes for each polling unit relative to its neighbors.
+Computed the outlier scores to quantify deviations from expected patterns.
 
-The second top outlier was DAMRI I /MODEL PRIMARY SCHOOL with an outlier score of 4.70070 with closet polling units being SHIYAR TUDU PRIMARY SCHOOL, BUKKUYUM PRIMARY SCHOOL and KARTAWA.
+3️⃣ Identifying Outliers
 
-The third top outlier was TABKIN BUSAU IV /N.D.L.E.A with an outlier score of 3.856274 with its closest polling units being BUKKUYUM PRIMARY SCHOOL, ABARMA PRIMARY SCHOOL, SHIYAR DANKADU II / KYALETA
+Applied a threshold of 1 to the outlier scores to flag polling units with significant deviations.
 
-Conclusion :
+Insights
 
-The SABON GARI / MUHDA PRI SCH record the highest outlier score (8.320158) indicating possible voting irregularities.
+Top Outliers Identified:
 
-BUKKUYUM PRIMARY SCHOOL was among closest polling units to two of the top outliers indicating possible voting irregularities.
+1️⃣ SABON GARI / MUHDA PRI SCH
 
-From the scatter plot in the Outlier detection in Election Data Using Geospatial Analysis.ipynb file, PDP party and NNPP party had the most outliers indicating there must have been possible voting irregularities.
+Outlier Score: 8.320158
+
+Closest Polling Units:
+•BAGEGA II / MAKARANTA
+•KATAFANA
+•DAN FAGE
+•ST UNGAR MAGAJI / PRIMARY SCHOOL AREA
+
+2️⃣ DAMRI I / MODEL PRIMARY SCHOOL
+
+Outlier Score: 4.70070
+
+Closest Polling Units:
+•SHIYAR TUDU PRIMARY SCHOOL
+•BUKKUYUM PRIMARY SCHOOL
+•KARTAWA
+
+3️⃣ TABKIN BUSAU IV / N.D.L.E.A
+
+Outlier Score: 3.856274
+
+Closest Polling Units:
+•BUKKUYUM PRIMARY SCHOOL
+•ABARMA PRIMARY SCHOOL
+•SHIYAR DANKADU II / KYALETA
+
+Key Observations:
+
+SABON GARI / MUHDA PRI SCH recorded the highest outlier score, suggesting possible voting irregularities.
+BUKKUYUM PRIMARY SCHOOL appeared as a neighboring unit to two of the top outliers, raising further concerns about its results.
+
+Scatter Plot Analysis:
+
+The PDP and NNPP parties exhibited the most outliers, hinting at potential voting anomalies favoring or impacting these parties.
+
+Conclusion
+
+The geospatial analysis of the Zamfara State presidential election data highlighted significant outliers that may indicate voting irregularities. The findings provide a foundation for further investigations to validate the integrity of the results.
+
+Explore More:
+
+Visualizations and detailed calculations can be found in the Outlier Detection in Election Data Using Geospatial Analysis.ipynb notebook.
+
 
 
 
