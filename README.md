@@ -1,21 +1,26 @@
 Outlier Detection in Zamfara State Presidential Election Data Using Geospatial Analysis
 
-Definition
+Definition:
+
 An outlier is a data point significantly different from other values in a dataset. These deviations can be much higher or lower than the norm, often signaling irregularities or errors.
 
-Context
+Context:
+
 In a recently concluded election in Zamfara State, Nigeria, the Independent National Electoral Commission faced widespread allegations of vote manipulation and irregularities. These claims raised questions about the integrity of the results, prompting the need for a data-driven investigation into potential anomalies at the polling unit level.
 
-Objective
+Objective:
+
 To identify polling units in Zamfara State where voting results deviate significantly from their neighboring units. The analysis aims to detect potential irregularities or influences by leveraging geospatial data and voting patterns.
 
-Dataset
+Dataset:
+
 Source: Zamfara State dataset (ZAMFARA_crosschecked_1.csv).
 
 Scope: 12 Local Government Areas, 70 Wards.
 Parties Analyzed: APC, PDP, LP, NNPP.
 
 Vote Counts:
+
 •APC: 15,190
 
 •PDP: 8,218
